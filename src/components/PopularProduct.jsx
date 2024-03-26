@@ -41,15 +41,15 @@ const PopularProduct = () => {
     },
   ];
   return (
-    <section className="flex flex-col w-full relative h-[950px]  justify-start items-start">
-      <div className="product-bg"></div>
+    <section className="flex flex-col w-full relative  lg:h-[950px]  justify-start items-start">
+      <div className="sm:clip-circle lg:clip-triangle h-[900px]  w-full absolute"></div>
       {product.map((product, key) => {
         return (
           <main
             key={key}
-            className="flex w-full h-[583px] justify-start gap-40 items-center z-10"
+            className="flex flex-col lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-40 items-center z-10"
           >
-            <div className="flex flex-col w-auto max-w-[714px] h-auto max-h-[257px] items-start justify-between">
+            <div className="flex flex-col w-auto max-w-[714px] h-auto  lg:max-h-[257px] items-start justify-between">
               <h1 className="text-7xl leading-[79.2px] font-extrabold">
                 {product.title}
               </h1>
@@ -72,9 +72,9 @@ const PopularProduct = () => {
                 </Link>
               </div>
             </div>
-            <div className="frame -m-10">
-              <div className="shape">
-                <img src={product.photo} alt="" className="  object-cover" />
+            <div className="frame -m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
+              <div className="lg:shape sm:shape">
+                <img src={product.photo} className="object-cover" />
               </div>
             </div>
           </main>
