@@ -1,9 +1,7 @@
-
 .frame {
-  background: rgba(251, 191, 36, 1);
-  border-radius: 10px;
-  position: relative;
+  background: rgba(251, 191, 36, 1); 
 }
+
 @media (min-width: 1024px) {
   .lg\:clip-triangle {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -23,16 +21,17 @@
 
 @media (max-width: 767px) {
   .sm\:clip-circle {
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
     background: rgba(254, 243, 199, 1);
     bottom: 0;
     right: 0;
     z-index: 0;
+    height: 1000px !important;
   }
   .sm\:shape  img{
     position: relative;
     width: 486px; 
-    transform: scale(1);
+    transform: scale(1.6);
     height: 388px;
   }
 }

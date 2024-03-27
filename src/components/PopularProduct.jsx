@@ -47,16 +47,16 @@ const PopularProduct = () => {
         return (
           <main
             key={key}
-            className="flex flex-col lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-40 items-center z-10"
+            className="flex flex-col lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-10 lg:gap-40 items-center z-10"
           >
-            <div className="flex flex-col w-auto max-w-[714px] h-auto  lg:max-h-[257px] items-start justify-between">
-              <h1 className="text-7xl leading-[79.2px] font-extrabold">
+            <div className="flex  flex-col w-auto max-w-[714px] h-auto  lg:max-h-[257px] lg:items-start justify-between">
+              <h1 className="text-center text-[56px]  lg:text-7xl leading-[79.2px] font-extrabold">
                 {product.title}
               </h1>
-              <h2 className=" mt-10 font-normal text-lg leading-7">
+              <h2 className=" mt-10 font-normal text-lg leading-7 text-center">
                 {product.subtitle}
               </h2>
-              <div className="flex items-center ">
+              <div className="flex items-center justify-center lg:justify-start w-full">
                 <Link
                   to={"/"}
                   className="p-3 cursor-pointer px-5 text-lg font-medium leading-6 border-[#78350F] text-[#78350F]  border-2 rounded-lg "
@@ -72,20 +72,20 @@ const PopularProduct = () => {
                 </Link>
               </div>
             </div>
-            <div className="frame -m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
+            <div className="frame relative rounded-[50px] lg:-m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
               <div className="lg:shape sm:shape">
-                <img src={product.photo} className="object-cover" />
+                <img src={product.photo} className="object-cover  -mt-24 lg:-mt-0" />
               </div>
             </div>
           </main>
         );
       })}
-      <div className="flex flex-col lg:flex-row w-full  justify-around z-10 items-center mt-10">
+      <div className="flex flex-col lg:flex-row w-full gap-5  justify-around z-10 items-center mt-20 lg:mt-10">
         {
           product[0].features.map(feature => {
             return(
               <FeaturesCard key={feature.title} {...feature}>
-                <h2 className="text-lg font-normal leading-7 mt-4">
+                <h2 className="text-lg font-normal leading-7 mt-4 text-center lg:text-start">
                   {feature.description}
                 </h2>
               </FeaturesCard>
