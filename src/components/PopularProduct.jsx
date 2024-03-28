@@ -4,14 +4,14 @@ import { images, icon } from "../constants";
 import { Link } from "react-router-dom";
 import { FaRegCirclePlay } from "react-icons/fa6";
 import FeaturesCard from "./FeaturesCard";
-
+import "../Pages/Home/style.css";
 const PopularProduct = () => {
   const product = [
     {
       title: "Collectible Sneakers",
       subtitle:
         "Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices amet.",
-      photo: images.sports,
+      photo: images.sneakers,
       link: "/",
       videoUrl: "http://example.com/",
       id: 1,
@@ -47,7 +47,7 @@ const PopularProduct = () => {
         return (
           <main
             key={key}
-            className="flex flex-col lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-10 lg:gap-40 items-center z-10"
+            className="flex flex-col overflow-hidden px-5 lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-10 lg:gap-40 items-center z-10"
           >
             <div className="flex  flex-col w-auto max-w-[714px] h-auto  lg:max-h-[257px] lg:items-start justify-between">
               <h1 className="text-center text-[56px]  lg:text-7xl leading-[79.2px] font-extrabold">
@@ -73,25 +73,26 @@ const PopularProduct = () => {
               </div>
             </div>
             <div className="frame relative rounded-[50px] lg:-m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
-              <div className="lg:shape sm:shape">
-                <img src={product.photo} className="object-cover  -mt-24 lg:-mt-0" />
+              <div className="lg:sneakers sm:sneakers xl:sneakers">
+                <img
+                  src={product.photo}
+                  className="object-cover -mt-24 lg:-mt-0"
+                />
               </div>
             </div>
           </main>
         );
       })}
-      <div className="flex flex-col lg:flex-row w-full gap-5  justify-around z-10 items-center mt-20 lg:mt-10">
-        {
-          product[0].features.map(feature => {
-            return(
-              <FeaturesCard key={feature.title} {...feature}>
-                <h2 className="text-lg font-normal leading-7 mt-4 text-center lg:text-start">
-                  {feature.description}
-                </h2>
-              </FeaturesCard>
-            )
-          })
-        }
+      <div className="flex flex-col lg:flex-row w-full  gap-5  justify-around z-10 items-center mt-20 lg:mt-10">
+        {product[0].features.map((feature) => {
+          return (
+            <FeaturesCard key={feature.title} {...feature}>
+              <h2 className="text-lg max-w-[400px] font-normal leading-7 mt-4 text-center lg:text-start">
+                {feature.description}
+              </h2>
+            </FeaturesCard>
+          );
+        })}
       </div>
     </section>
   );

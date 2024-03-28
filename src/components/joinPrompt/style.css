@@ -1,0 +1,139 @@
+.join-box {
+  height: 496px;
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.shape {
+  position: absolute;
+}
+.shape:nth-child(1) {
+  border-radius: 100%;
+  background: rgba(21, 128, 61, 1);
+  opacity: 75%;
+  height: 85px;
+  width: 85px;
+  bottom: -20px;
+  left: 150px;
+  z-index: 21;
+}
+.shape:nth-child(2) {
+  width: 90px;
+  height: 90px;
+  top: 0px;
+  left: 60px;
+  border-radius: 30px;
+  opacity: 0.75px;
+  z-index: 9;
+  background: rgba(180, 83, 9, 1);
+}
+.shape:nth-child(3) {
+  width: 666.28px;
+  height: 217.93px;
+  top: 40.95px;
+  left: 0px;
+  opacity: 0px;
+  transform: rotate(140deg);
+  z-index: 9;
+  background: rgba(253, 230, 138, 1);
+}
+.shape:nth-child(4) {
+  width: 59px;
+  height: 60px;
+  top: -100px;
+  right: 70px;
+  border-radius: 50px;
+  opacity: 75%;
+  background: rgba(3, 105, 161, 1);
+  z-index: 20;
+}
+.shape:nth-child(5) {
+  width: 218px;
+  height: 218px;
+  top: 214px;
+  right: -120px;
+  border-radius: 50px;
+  opacity: 75%;
+  background: rgba(190, 24, 93, 1);
+  z-index: 9;
+}
+.shape:nth-child(6) {
+  width: 74px;
+  height: 74px;
+  top: 290px;
+  right: 80px;
+  z-index: 11;
+  border-radius: 30px;
+  opacity: 75%;
+  background: rgba(162, 28, 175, 1);
+}
+
+@media (max-width: 900px) {
+  .sm\:join-box {
+    height: auto;
+    width: 98%;
+    border-radius: 30px;
+  }
+  .sm\:shape:nth-child(1) {
+    border-radius: 100%;
+    background: rgba(21, 128, 61, 1);
+    opacity: 75%;
+    width: 49px;
+    height: 50px;
+    bottom: 10px;
+    left: 40px;
+    z-index: 21;
+  }
+  .sm\:shape:nth-child(2) {
+    width: 55.56px;
+    height: 55.56px;
+    top:26.46px;
+    left: -5.91px;
+    border-radius: 30px;
+    opacity: 0.75px;
+    z-index: 9;
+    background: rgba(180, 83, 9, 1);
+  }
+  .sm\:shape:nth-child(3) {
+    width: 411.34px;
+    height: 134.55px;
+    top: 39.66px;
+    left: -109.87px;
+    opacity: 0px;
+    transform: rotate(140deg);
+    z-index: 9;
+    background: rgba(253, 230, 138, 1);
+  }
+  .sm\:shape:nth-child(4) {
+    width: 36.42px;
+    height: 37.04px;
+    top: -40px;
+    left: 236.84px;
+    border-radius: 50px;
+    opacity: 75%;
+    background: rgba(3, 105, 161, 1);
+    z-index: 20;
+  }
+  .sm\:shape:nth-child(5) {
+    width: 134.59px;
+    height: 134.59px;
+    top: 109.81px;
+    left: 245.73px;
+    border-radius: 50px;
+    opacity: 75%;
+    background: rgba(190, 24, 93, 1);
+    z-index: 9;
+  }
+  .sm\:shape:nth-child(6) {
+    width: 45.69px;
+    height: 45.69px;
+    top: 169.58px;
+    left: 232.88px;
+    z-index: 11;
+    border-radius: 30px;
+    opacity: 75%;
+    background: rgba(162, 28, 175, 1);
+  }
+}

@@ -4,7 +4,7 @@ import React from 'react'
 // eslint-disable-next-line react/prop-types
 const FeaturesCard = ({title , subTitle ,icon , bgIcon , children}) => {
   return (
-    <div className="w-[374px] h-[205px] flex flex-col justify-around items-center lg:items-start ">
+    <div className="w-full  lg:w-[374px] h-[205px] flex flex-col justify-around items-center lg:items-start">
         <div className='relative'>
             <img src={bgIcon} alt="" className="object-cover absolute left-7" />
             <img src={icon} alt="" className="  object-cover" />
