@@ -15,7 +15,7 @@ const JoinPrompt = () => {
     },
   ];
   return (
-    <section className="overflow-hidden lg:overflow-visible w-full h-auto lg:h-[816px] flex flex-col lg:justify-center justify-start items-center p-5 lg:p-0">
+    <section className="overflow-hidden 2xl:overflow-visible  w-full h-auto lg:h-[816px] flex flex-col lg:justify-center justify-start items-center p-5 lg:p-0">
       <div className="join-box sm:join-box flex flex-col lg:flex-row justify-start items-center align-middle  p-[32px] lg:p-[80px]">
         <div className="w-full  lg:w-6/12  flex flex-col items-center lg:items-start lg:justify-center justify-start gap-6 h-auto lg:h-full">
           <h1 className="lg:font-extrabold lg:text-[56px] lg:leading-[61.6px] text-start text-[32px] leading-[35.5px] font-bold">

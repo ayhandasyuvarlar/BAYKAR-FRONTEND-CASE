@@ -1,0 +1,23 @@
+.slider-bg {
+  background: rgba(253, 230, 138, 1);
+  height: 421px;
+}
+
+.comments-box {
+  width: 384px !important;
+  height: 430px !important ;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.07);
+  z-index: 40;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 600px) {
+  .comments-box {
+    width: 319px !important;
+    height: 296px  !important;
+  }
+  .slider-bg {
+    background: rgba(253, 230, 138, 1);
+    height: 277px;
+  }
+}
