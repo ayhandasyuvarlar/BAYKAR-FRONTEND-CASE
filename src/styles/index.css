@@ -63,3 +63,7 @@ body {
   transition: 0.11s;
 }
 
+footer {
+  background: rgba(15, 23, 42, 1);
+  color: white;
+}

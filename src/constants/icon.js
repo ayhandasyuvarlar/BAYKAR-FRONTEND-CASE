@@ -16,6 +16,8 @@ import userOne from "../assets/icon/user.svg";
 import userTwo from "../assets/icon/user2.svg";
 import userThree from "../assets/icon/user3.svg";
 import userFour from "../assets/icon/user4.svg";
+import appStore from "../assets/icon/AppStore.svg";
+import googlePlay from "../assets/icon/GooglePlay.svg";
 export default {
   menuScale,
   circle,
@@ -35,4 +37,6 @@ export default {
   userTwo,
   userThree,
   userFour,
+  appStore,
+  googlePlay,
 };
