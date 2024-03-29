@@ -70,7 +70,14 @@
   background: rgba(162, 28, 175, 1);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .lg\:join-box {
+    height: 700px;
+    width: 98%;
+    border-radius: 30px;
+  }
+}
+@media (max-width: 600px) {
   .sm\:join-box {
     height: auto;
     width: 98%;

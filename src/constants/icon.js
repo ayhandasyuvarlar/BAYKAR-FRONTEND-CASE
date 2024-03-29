@@ -27,6 +27,11 @@ import search from "../assets/icon/search.svg";
 import shieldCheck from "../assets/icon/shield-check.svg";
 import settings from "../assets/icon/settings-alt.svg";
 import rocket from "../assets/icon/rocket.svg";
+import waveOne from "../assets/icon/Wave1.svg";
+import waveTwo from "../assets/icon/Wave2.svg";
+import waveThree from "../assets/icon/Wave3.svg";
+import world from "../assets/icon/Group.svg";
+import play from "../assets/icon/play.svg";
 export default {
   menuScale,
   circle,
@@ -57,4 +62,9 @@ export default {
   shieldCheck,
   settings,
   rocket,
+  waveOne,
+  waveTwo,
+  waveThree,
+  world,
+  play
 };

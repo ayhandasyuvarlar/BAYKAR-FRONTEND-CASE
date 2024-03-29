@@ -1,0 +1,14 @@
+.triangle-bottom {
+    position: relative;
+  }
+  
+  .triangle-bottom::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Üçgenin elementten ne kadar aşağıda olacağını ayarlayın */
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #E2E8F0; /* Üçgenin rengini ve boyutunu ayarlayın */
+  }

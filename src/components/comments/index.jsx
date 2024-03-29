@@ -82,7 +82,7 @@ const Comments = () => {
     }
   }, []);
   return (
-    <section className=" h-auto relative lg:h-[732px] w-full p-0  flex flex-col gap-10 mt-14 mb-20 lg:mb-0 lg:mt-0 ">
+    <section className=" h-auto overflow-hidden  relative lg:h-[732px] w-full p-0  flex flex-col gap-10 mt-14 mb-20 lg:mb-0 lg:mt-0 ">
       <div className="flex flex-row justify-center">
         <h1 className="text-[32px] leading-[35.2px] font-bold lg:text-[56px] w-full text-center lg:text-start lg:w-9/12 lg:font-extrabold lg:leading-[61.6px]">
           Because they love us
@@ -114,7 +114,7 @@ const Comments = () => {
                 <div>
                   <img src={comment.companyLogo} alt="" />
                 </div>
-                <p className="text-base  leading-[22px] lg:text-2xl lg:leading-[38.4px] font-normal">
+                <p className="text-base  leading-[22px] md:text-2xl lg:text-2xl lg:leading-[38.4px] font-normal">
                   {comment.comment}
                 </p>
                 <div className="flex flex-row w-full justify-start items-center gap-2">

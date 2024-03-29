@@ -1,13 +1,11 @@
 /* eslint-disable react/prop-types */
 import "./style.css";
 
-const Screen = ({ width, height, className, children, tab }) => {
+const Screen = ({ className, children, tab }) => {
   return (
     <div
       className={`${className && className}`}
       style={{
-        width: width,
-        height: height,
         backgroundColor: "rgba(255, 255, 255, 1)",
         borderRadius: "20px",
         overflow: "hidden",
@@ -15,7 +13,7 @@ const Screen = ({ width, height, className, children, tab }) => {
       }}
     >
       {tab && (
-        <div className="w-full h-10 gap-2 p-[12px] flex flex-row items-center justify-start">
+        <div className="w-full h-4 lg:h-10 gap-2 p-3 lg:p-[12px]  flex flex-row items-center justify-start">
           <div className="rounded-full w-2 h-2 bg-[#E11D48]"></div>
           <div className="rounded-full w-2 h-2 bg-[#FBBF24]"></div>
           <div className="rounded-full w-2 h-2 bg-[#22C55E]"></div>

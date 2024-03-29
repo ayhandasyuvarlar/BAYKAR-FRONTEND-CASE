@@ -47,7 +47,7 @@ const PopularProduct = () => {
         return (
           <main
             key={key}
-            className="flex flex-col overflow-hidden px-5 lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-10 lg:gap-40 items-center z-10"
+            className="flex flex-col overflow-hidden px-3 lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-10 lg:gap-40 items-center z-10"
           >
             <div className="flex  flex-col w-auto max-w-[714px] h-auto  lg:max-h-[257px] lg:items-start justify-between">
               <h1 className="text-center text-[56px]  lg:text-7xl leading-[79.2px] font-extrabold">

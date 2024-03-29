@@ -34,7 +34,7 @@ const BestOfBest = () => {
     },
   ];
   return (
-    <section className="w-full h-auto container">
+    <section className="w-full h-auto bg-[#0F172A]">
       {getProducts &&
         getProducts.map((product, key) => (
           <div
