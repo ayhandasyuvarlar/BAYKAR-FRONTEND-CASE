@@ -20,6 +20,13 @@ import appStore from "../assets/icon/AppStore.svg";
 import googlePlay from "../assets/icon/GooglePlay.svg";
 import next from "../assets/icon/next.svg";
 import back from "../assets/icon/back.svg";
+import podcast from "../assets/icon/podcast.svg";
+import right from "../assets/icon/right.svg";
+import screen from "../assets/icon/screen.svg";
+import search from "../assets/icon/search.svg";
+import shieldCheck from "../assets/icon/shield-check.svg";
+import settings from "../assets/icon/settings-alt.svg";
+import rocket from "../assets/icon/rocket.svg";
 export default {
   menuScale,
   circle,
@@ -43,4 +50,11 @@ export default {
   googlePlay,
   next,
   back,
+  podcast,
+  right,
+  screen,
+  search,
+  shieldCheck,
+  settings,
+  rocket,
 };

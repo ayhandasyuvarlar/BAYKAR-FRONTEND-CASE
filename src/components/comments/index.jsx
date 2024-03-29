@@ -82,7 +82,7 @@ const Comments = () => {
     }
   }, []);
   return (
-    <section className=" h-auto relative lg:h-[732px] w-full p-0  flex flex-col gap-10 mt-14 mb-20 lg:mt-0 ">
+    <section className=" h-auto relative lg:h-[732px] w-full p-0  flex flex-col gap-10 mt-14 mb-20 lg:mb-0 lg:mt-0 ">
       <div className="flex flex-row justify-center">
         <h1 className="text-[32px] leading-[35.2px] font-bold lg:text-[56px] w-full text-center lg:text-start lg:w-9/12 lg:font-extrabold lg:leading-[61.6px]">
           Because they love us
