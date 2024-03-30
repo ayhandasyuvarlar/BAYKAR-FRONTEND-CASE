@@ -30,7 +30,7 @@
   background: rgba(180, 83, 9, 1);
 }
 .shape:nth-child(3) {
-  width: 666.28px;
+  width: 100%;
   height: 217.93px;
   top: 40.95px;
   left: 0px;
@@ -72,7 +72,7 @@
 
 @media (max-width: 1000px) {
   .lg\:join-box {
-    height: 700px;
+    height: 800px;
     width: 98%;
     border-radius: 30px;
   }
