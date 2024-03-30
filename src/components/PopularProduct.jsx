@@ -41,7 +41,7 @@ const PopularProduct = () => {
     },
   ];
   return (
-    <section className="flex flex-col w-full relative lg:h-[1000px]  2xl:h-[950px]  justify-start items-start">
+    <section className="flex flex-col pb-10 2xl:pb-0  w-full relative lg:h-[1000px]  2xl:h-[950px]  justify-start items-start">
       <div className="sm:clip-circle  lg:clip-triangle h-[900px]  w-full absolute"></div>
       {product.map((product, key) => {
         return (
@@ -72,7 +72,7 @@ const PopularProduct = () => {
                 </Link>
               </div>
             </div>
-            <div className="frame relative rounded-[50px] lg:-m-32 2xl:-m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
+            <div className="bg-[#FBBF24] relative rounded-[50px] lg:-m-32   2xl:-m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
               <div className="lg:sneakers md:sneakers sm:sneakers">
                 <img
                   src={product.photo}
@@ -83,7 +83,7 @@ const PopularProduct = () => {
           </main>
         );
       })}
-      <div className="flex flex-col lg:flex-row w-full md:px-5 2xl:px-0   gap-5  justify-around z-10 items-center mt-20 lg:mt-10">
+      <div className="flex flex-col lg:flex-row w-full    md:px-5 2xl:px-0 gap-5  justify-around z-10 items-center mt-20 lg:mt-10 2xl:mt-20">
         {product[0].features.map((feature) => {
           return (
             <FeaturesCard key={feature.title} {...feature}>
