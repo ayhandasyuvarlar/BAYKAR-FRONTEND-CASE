@@ -41,13 +41,13 @@ const PopularProduct = () => {
     },
   ];
   return (
-    <section className="flex flex-col w-full relative  lg:h-[950px]  justify-start items-start">
-      <div className="sm:clip-circle lg:clip-triangle h-[900px]  w-full absolute"></div>
+    <section className="flex flex-col w-full relative lg:h-[1000px]  2xl:h-[950px]  justify-start items-start">
+      <div className="sm:clip-circle  lg:clip-triangle h-[900px]  w-full absolute"></div>
       {product.map((product, key) => {
         return (
           <main
             key={key}
-            className="flex flex-col overflow-hidden px-3 lg:flex-row w-full h-auto lg:h-[583px] justify-start gap-10 lg:gap-40 items-center z-10"
+            className="flex flex-col overflow-hidden px-3 2xl:flex-row w-full h-auto lg:h-[700px] 2xl:h-[583px] justify-start gap-10 lg:gap-40 items-center z-10"
           >
             <div className="flex  flex-col w-auto max-w-[714px] h-auto  lg:max-h-[257px] lg:items-start justify-between">
               <h1 className="text-center text-[56px]  lg:text-7xl leading-[79.2px] font-extrabold">
@@ -56,7 +56,7 @@ const PopularProduct = () => {
               <h2 className=" mt-10 font-normal text-lg leading-7 text-center">
                 {product.subtitle}
               </h2>
-              <div className="flex items-center justify-center lg:justify-start w-full">
+              <div className="flex items-center justify-center 2xl:justify-start w-full">
                 <Link
                   to={"/"}
                   className="p-3 cursor-pointer px-5 text-lg font-medium leading-6 border-[#78350F] text-[#78350F]  border-2 rounded-lg "
@@ -72,8 +72,8 @@ const PopularProduct = () => {
                 </Link>
               </div>
             </div>
-            <div className="frame relative rounded-[50px] lg:-m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
-              <div className="lg:sneakers sm:sneakers xl:sneakers">
+            <div className="frame relative rounded-[50px] lg:-m-32 2xl:-m-16 h-[272px] w-[276px] lg:w-[367px] lg:h-[372px]">
+              <div className="lg:sneakers md:sneakers sm:sneakers">
                 <img
                   src={product.photo}
                   className="object-cover -mt-24 lg:-mt-0"
@@ -83,7 +83,7 @@ const PopularProduct = () => {
           </main>
         );
       })}
-      <div className="flex flex-col lg:flex-row w-full  gap-5  justify-around z-10 items-center mt-20 lg:mt-10">
+      <div className="flex flex-col lg:flex-row w-full md:px-5 2xl:px-0   gap-5  justify-around z-10 items-center mt-20 lg:mt-10">
         {product[0].features.map((feature) => {
           return (
             <FeaturesCard key={feature.title} {...feature}>
