@@ -36,9 +36,9 @@ const Collection = () => {
     },
   ];
   return (
-    <section className="w-full relative overflow-hidden flex flex-col md:h-[770px] lg:h-[996px] py-0 lg:py-[80px] gap-3 lg:gap-10 justify-start items-center">
+    <section className="w-full relative overflow-hidden flex flex-col h-[722px] md:h-[800px]  lg:h-[996px] py-0 lg:py-[80px] gap-3 lg:gap-10 justify-start items-center">
       <div className="flex flex-col justify-center gap-5 lg:gap-10 lg:items-start  items-center w-10/12 z-20">
-        <h1 className="text-[32px]  leading-[35px] font-bold lg:text-[56px] lg:leading-[61.6px] lg:font-extrabold">
+        <h1 className="text-[32px] text-center md:text-start  leading-[35px] font-bold lg:text-[56px] lg:leading-[61.6px] lg:font-extrabold">
           Grow your collection
         </h1>
         <p className="leading-[28.8px] text-center font-normal lg:text-start  text-lg">
@@ -48,8 +48,8 @@ const Collection = () => {
           proin neque placerat at bibendum quam tellus.
         </p>
       </div>
-      <div className="w-full flex flex-col gap-4 lg:gap-0 lg:flex-row justify-center items-center h-[400px] md:h-[670px] lg:h-[556px] z-20">
-        <ul className="flex flex-row lg:flex-col lg:h-full justify-start gap-10 lg:gap-5 p-5 lg:p-0 items-center lg:items-start overflow-visible  overflow-scroll lg:overflow-hidden w-[100%] lg:w-[256px]  lg:pl-2">
+      <div className="w-full flex flex-col gap-4 lg:gap-0 lg:flex-row justify-center items-center h-[600px] md:h-[670px] lg:h-[556px] z-20">
+        <ul className="flex flex-row lg:flex-col lg:h-full justify-start gap-10 lg:gap-5 p-5 lg:p-0 items-center lg:items-start overflow-y-hidden overflow-x-scroll scrollbar-hidden lg:overflow-hidden w-[100%] lg:w-[256px]  lg:pl-2">
           <button
             className="flex flex-row justify-center  text-xl leading-6 font-medium items-center gap-4 min-w-[240px]  lg:min-w-auto lg:w-full p-4 rounded-lg bg-white"
             style={{ boxShadow: " 0px 0px 4px 0px #00000012" }}
