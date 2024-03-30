@@ -73,7 +73,7 @@ const Collection = () => {
           <Screen
             tab={true}
             className={
-              "flex flex-col w-8/12 h-[60%] lg:w-10/12 lg:h-[80%] border-[5px] border-white"
+              "flex flex-col w-8/12 h-[48%] lg:w-10/12 lg:h-[80%] border-[5px] border-white"
             }
           >
             <img
@@ -87,7 +87,7 @@ const Collection = () => {
           <Screen
             tab={true}
             className={
-              "flex flex-col w-8/12  lg:w-10/12 -mt-[30%] lg:-mt-[36%]  ml-[15%] h-[65%] lg:h-[80%] border-[5px] border-white "
+              "flex flex-col w-8/12  lg:w-10/12 -mt-[30%] lg:-mt-[36%]  ml-[15%] h-[55%] lg:h-[80%] border-[5px] border-white "
             }
           >
             <img
@@ -101,7 +101,7 @@ const Collection = () => {
           <Screen
             tab={false}
             className={
-              "flex flex-col  w-3/12  h-[40%] ml-[70%] -mt-[35%] lg:-mt-[36%]  lg:ml-[80%] lg:h-[50%] border-[5px] border-white "
+              "flex flex-col  w-3/12  h-[30%] ml-[70%] -mt-[35%] lg:-mt-[36%]  lg:ml-[80%] lg:h-[50%] border-[5px] border-white "
             }
           >
             <img
